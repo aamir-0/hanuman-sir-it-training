@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "DM Sans", sans-serif; }
+}
+
+@layer components {
+  .display { font-family: "Libre Baskerville", Georgia, serif; font-weight: 400; letter-spacing: -0.02em; }
+  .eyebrow { font-size: .62rem; font-weight: 700; letter-spacing: .14em; line-height: 1.4; text-transform: uppercase; }
+  .nav-link { padding: .55rem 0; transition: color .2s ease; }
+  .nav-link:hover, .mobile-link:hover { color: #0872c9; }
+  .mobile-link { display: block; padding: .75rem 0; text-align: left; width: 100%; }
+  .mobile-sublink { display: block; padding: .55rem 0; color: #526176; font-size: .8rem; }
+  .footer-link { display: block; margin-top: .7rem; font-size: .72rem; }
+  .footer-link:hover { color: white; }
+  .field { color: #526176; display: flex; flex-direction: column; font-size: .7rem; font-weight: 700; gap: .4rem; }
+  .field input, .field select, .field textarea { background: #fff; border: 1px solid #d6deea; border-radius: 0; color: #182538; font: inherit; font-weight: 400; outline: none; padding: .7rem .8rem; transition: border-color .2s ease, box-shadow .2s ease; }
+  .field textarea { resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: #0872c9; box-shadow: 0 0 0 3px rgba(8, 114, 201, .12); }
+  .field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #b42318; }
+  .field-error { color: #b42318; font-size: .68rem; font-weight: 400; min-height: 1rem; }
+}
+
+.hero-grid { background-image: linear-gradient(rgba(105, 158, 207, .09) 1px, transparent 1px), linear-gradient(90deg, rgba(105, 158, 207, .09) 1px, transparent 1px); background-size: 54px 54px; }
+.hero-grid::after { background-image: radial-gradient(rgba(147, 197, 253, .28) 1px, transparent 1px); background-size: 38px 38px; content: ""; inset: 0; opacity: .25; pointer-events: none; position: absolute; }
+.hero-grid > * { position: relative; z-index: 1; }
+.hero-orbit { border: 1px solid rgba(147, 197, 253, .3); border-radius: 50%; height: 410px; position: absolute; right: -20px; top: -25px; transform: rotate(-28deg); width: 560px; }
+.hero-orbit-two { height: 300px; right: 90px; top: 30px; width: 390px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

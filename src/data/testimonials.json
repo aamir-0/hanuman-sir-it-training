@@ -1,0 +1,5 @@
+[
+  {"quote":"Alexander did not simply review our design; he taught our engineers how to interrogate it. The new runbooks survive production pressure because the reasoning is now shared.","name":"Marcus Boyd","title":"VP Infrastructure","company":"North American Financial Services","initials":"MB"},
+  {"quote":"The Entra hybrid synchronisation track resolved edge cases in our multi-forest estate that every internal team had avoided. It felt like having a principal architect on the floor.","name":"Sarah Lin","title":"Lead Cloud Security Engineer","company":"Stratos Systems","initials":"SL"},
+  {"quote":"Flawless execution on our vSphere 8 migration training. Alexander constructed a mirror topology that allowed our NOC team to rehearse high-availability behaviour without production risk.","name":"David Chen","title":"Director of IT Operations","company":"Telecom Dynamics","initials":"DC"}
+]

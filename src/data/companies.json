@@ -1,0 +1,8 @@
+[
+  {"name":"Cisco","logoPath":"/assets/logos/cisco.svg","alt":"Cisco"},
+  {"name":"HPE","logoPath":"/assets/logos/hpe.svg","alt":"HPE"},
+  {"name":"Huawei","logoPath":"/assets/logos/huawei.svg","alt":"Huawei"},
+  {"name":"Cognizant","logoPath":"/assets/logos/cognizant.svg","alt":"Cognizant"},
+  {"name":"Infosys","logoPath":"/assets/logos/infosys.svg","alt":"Infosys"},
+  {"name":"HCLTech","logoPath":"/assets/logos/hcltech.svg","alt":"HCLTech"}
+]

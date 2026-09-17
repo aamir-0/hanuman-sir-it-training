@@ -1,0 +1,15 @@
+import { useState } from "react";
+import courses from "../../data/courses.json";
+import { Button } from "../ui/Button";
+
+const initialForm = { name: "", email: "", phone: "", course: "", cohort: "", delivery: "", message: "" };
+
+export function ContactForm({ compact = false }) {
+  const [form, setForm] = useState(initialForm);
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+  const update = (event) => setForm((current) => ({ ...current, [event.target.name]: event.target.value }));
+  const submit = (event) => { event.preventDefault(); const next = {}; Object.entries(form).forEach(([key, value]) => { if (!value.trim()) next[key] = "This field is required."; }); if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = "Enter a valid email address."; setErrors(next); if (Object.keys(next).length === 0) setSubmitted(true); };
+  const field = (name, label, type = "text", options) => <label className={`field ${errors[name] ? "invalid" : ""}`}>{label}{options ? <select name={name} value={form[name]} onChange={update}><option value="">{options.placeholder}</option>{options.items.map((item) => <option key={item} value={item}>{item}</option>)}</select> : type === "textarea" ? <textarea name={name} value={form[name]} onChange={update} rows={compact ? 4 : 6} /> : <input name={name} value={form[name]} onChange={update} type={type} />}{errors[name] && <span className="field-error">{errors[name]}</span>}</label>;
+  return <form className="border border-slate-200 bg-white p-7 shadow-lg sm:p-10" onSubmit={submit} noValidate><p className="eyebrow text-slate-500">{compact ? "Corporate cohort intake" : "Cohort intake"}</p><h2 className="display mt-3 text-3xl text-navy">{compact ? "Corporate cohort intake" : "Start a conversation"}</h2>{compact && <p className="mt-2 text-sm text-slate-600">Submit your team&apos;s training specifications for a customized curriculum proposal.</p>}<div className="mt-7 grid gap-4 sm:grid-cols-2">{field("name", "Full name")}{field("email", "Work email", "email")}{field("phone", "Phone number")}{field("course", "Program track", "select", { placeholder: "Select curriculum track", items: courses.map((course) => course.title) })}{compact && field("cohort", "Estimated cohort size", "select", { placeholder: "Select cohort size", items: ["1 - 3 Engineers", "4 - 10 Engineers", "10+ Team / Dept"] })}{compact && field("delivery", "Training delivery mode", "select", { placeholder: "Select delivery mode", items: ["Live Virtual Labs", "On-site Enterprise Workshop"] })}<div className="sm:col-span-2">{field("message", "Objectives & technical scope", "textarea")}</div></div><div className="mt-6 flex flex-wrap items-center gap-4"><Button type="submit">Submit {compact ? "training " : ""}enquiry <span aria-hidden="true">→</span></Button><p className="text-xs text-slate-500">Your details are handled in confidence.</p></div>{submitted && <p className="mt-4 text-sm font-semibold text-emerald-700" role="status">Thank you. Your enquiry is ready for secure submission to the admissions desk.</p>}</form>;
+}

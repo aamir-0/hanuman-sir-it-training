@@ -1,0 +1,38 @@
+[
+  {
+    "id":"networking-core",
+    "title":"Networking Core",
+    "tagline":"Design, operate, and troubleshoot resilient enterprise networks.",
+    "level":"Intermediate to advanced",
+    "duration":"6 weeks",
+    "overview":"A field-led route through enterprise routing, switching, and operational discipline, built around realistic topology decisions rather than memorized commands.",
+    "curriculumHighlights":["Cisco routing and switching foundations","OSPF, BGP, redundancy, and secure segmentation","Incident response through packet-level troubleshooting"],
+    "prerequisites":["Working TCP/IP knowledge","Basic Cisco IOS familiarity","Access to a virtual lab environment"],
+    "pdfPath":"/assets/pdfs/networking-core-syllabus.pdf",
+    "iconPath":"/assets/logos/cisco.svg"
+  },
+  {
+    "id":"vmware-vsphere",
+    "title":"VMware vSphere 8",
+    "tagline":"Build and govern production virtualisation clusters.",
+    "level":"Advanced",
+    "duration":"5 weeks",
+    "overview":"A practical vSphere 8.x programme covering cluster design, lifecycle operations, workload resilience, and the operational choices that keep virtual platforms predictable.",
+    "curriculumHighlights":["vCenter, ESXi, HA, DRS, and lifecycle manager","Storage and network design for clustered workloads","Capacity, availability, and recovery runbooks"],
+    "prerequisites":["Systems administration experience","Comfort with virtual machines","Understanding of storage fundamentals"],
+    "pdfPath":"/assets/pdfs/vmware-vsphere-syllabus.pdf",
+    "iconPath":"/assets/logos/vmware.svg"
+  },
+  {
+    "id":"azure-entra",
+    "title":"Azure Entra ID",
+    "tagline":"Secure hybrid identity across the modern enterprise.",
+    "level":"Intermediate to advanced",
+    "duration":"4 weeks",
+    "overview":"An architecture-first course for teams moving from legacy directory services to a resilient Azure Entra ID identity plane.",
+    "curriculumHighlights":["Hybrid identity, Connect, and tenant governance","Conditional Access and privileged identity management","Zero Trust design patterns for enterprise access"],
+    "prerequisites":["Microsoft 365 or Azure fundamentals","Working directory services knowledge","An Azure trial or lab tenant"],
+    "pdfPath":"/assets/pdfs/azure-entra-syllabus.pdf",
+    "iconPath":"/assets/logos/azure.svg"
+  }
+]

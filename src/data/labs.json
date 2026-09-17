@@ -1,0 +1,32 @@
+[
+  {
+    "id":"routing-switching-lab",
+    "title":"Routing & Switching Lab",
+    "tagline":"A controlled topology for diagnosing real network failure modes.",
+    "level":"CCNA / CCNP",
+    "description":"Work through routed campus design, redundancy, access control, and incident tickets in a topology that grows with each practical.",
+    "toolsUsed":["Cisco IOSv", "EVE-NG", "Wireshark", "NetBox"],
+    "imagePath":"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85",
+    "environmentDetails":{"accessType":"Dedicated browser lab", "duration":"30-day access", "hardwareSoftware":"IOSv, Linux jump host, packet captures"}
+  },
+  {
+    "id":"vsphere-cluster-lab",
+    "title":"vSphere Cluster Lab",
+    "tagline":"Operate a production-shaped virtualisation cluster from first boot to recovery.",
+    "level":"VCP-DCV",
+    "description":"Configure a multi-host vSphere cluster, test failure domains, and document the operational controls that protect workload availability.",
+    "toolsUsed":["vSphere 8.x", "vCenter", "vSAN", "PowerCLI"],
+    "imagePath":"https://images.unsplash.com/photo-1563770660941-10a2b3fc6f83?auto=format&fit=crop&w=1200&q=85",
+    "environmentDetails":{"accessType":"Reserved virtual cluster", "duration":"21-day access", "hardwareSoftware":"ESXi hosts, vCenter, vSAN datastore"}
+  },
+  {
+    "id":"entra-hybrid-lab",
+    "title":"Entra Hybrid Identity Lab",
+    "tagline":"Secure an identity plane from directory sync through privileged access.",
+    "level":"Azure Architect",
+    "description":"Design and test a hybrid tenant with synchronisation, Conditional Access, break-glass controls, and a measured Zero Trust migration path.",
+    "toolsUsed":["Azure Entra ID", "Entra Connect", "PowerShell", "Microsoft Graph"],
+    "imagePath":"https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85",
+    "environmentDetails":{"accessType":"Isolated Azure tenant", "duration":"14-day access", "hardwareSoftware":"Azure AD Connect, test users, Graph PowerShell"}
+  }
+]
