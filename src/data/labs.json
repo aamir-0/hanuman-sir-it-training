@@ -1,32 +1,7 @@
 [
-  {
-    "id":"routing-switching-lab",
-    "title":"Routing & Switching Lab",
-    "tagline":"A controlled topology for diagnosing real network failure modes.",
-    "level":"CCNA / CCNP",
-    "description":"Work through routed campus design, redundancy, access control, and incident tickets in a topology that grows with each practical.",
-    "toolsUsed":["Cisco IOSv", "EVE-NG", "Wireshark", "NetBox"],
-    "imagePath":"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85",
-    "environmentDetails":{"accessType":"Dedicated browser lab", "duration":"30-day access", "hardwareSoftware":"IOSv, Linux jump host, packet captures"}
-  },
-  {
-    "id":"vsphere-cluster-lab",
-    "title":"vSphere Cluster Lab",
-    "tagline":"Operate a production-shaped virtualisation cluster from first boot to recovery.",
-    "level":"VCP-DCV",
-    "description":"Configure a multi-host vSphere cluster, test failure domains, and document the operational controls that protect workload availability.",
-    "toolsUsed":["vSphere 8.x", "vCenter", "vSAN", "PowerCLI"],
-    "imagePath":"https://images.unsplash.com/photo-1563770660941-10a2b3fc6f83?auto=format&fit=crop&w=1200&q=85",
-    "environmentDetails":{"accessType":"Reserved virtual cluster", "duration":"21-day access", "hardwareSoftware":"ESXi hosts, vCenter, vSAN datastore"}
-  },
-  {
-    "id":"entra-hybrid-lab",
-    "title":"Entra Hybrid Identity Lab",
-    "tagline":"Secure an identity plane from directory sync through privileged access.",
-    "level":"Azure Architect",
-    "description":"Design and test a hybrid tenant with synchronisation, Conditional Access, break-glass controls, and a measured Zero Trust migration path.",
-    "toolsUsed":["Azure Entra ID", "Entra Connect", "PowerShell", "Microsoft Graph"],
-    "imagePath":"https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85",
-    "environmentDetails":{"accessType":"Isolated Azure tenant", "duration":"14-day access", "hardwareSoftware":"Azure AD Connect, test users, Graph PowerShell"}
-  }
+  {"id":"windows-machine-labs","category":"Windows Machine Labs","title":"Windows Machine Labs","tagline":"Practice administration on dedicated Windows environments.","level":"Hands-on lab access","description":"Dedicated Windows machine environments for administration, identity, policy, security, and troubleshooting practice.","idealFor":["Windows Server learners","College cohorts","Corporate infrastructure teams"],"capabilities":["Windows Server administration","Active Directory and Group Policy","DNS, DHCP, and PowerShell","Security and troubleshooting"],"toolsUsed":["Windows Server","Active Directory","PowerShell"],"imagePath":"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85","environmentDetails":{"accessType":"Dedicated browser lab","duration":"Flexible access plans","hardwareSoftware":"Windows Server, Active Directory, isolated practice network"}},
+  {"id":"linux-machine-labs","category":"Linux Machine Labs","title":"Linux Machine Labs","tagline":"Build command-line confidence on production-shaped Linux systems.","level":"Hands-on lab access","description":"Linux machine labs for administration, scripting, networking, security, and real-world troubleshooting workflows.","idealFor":["Linux learners","DevOps and cloud teams","College technical programs"],"capabilities":["Linux installation and administration","Shell scripting and automation","Service, network, and security management","Troubleshooting and recovery"],"toolsUsed":["RHEL","Ubuntu","Bash","SSH"],"imagePath":"https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=85","environmentDetails":{"accessType":"Isolated Linux machines","duration":"Flexible access plans","hardwareSoftware":"RHEL and Ubuntu environments, SSH access, practice services"}},
+  {"id":"networking-labs","category":"Networking Labs","title":"Networking Labs","tagline":"Diagnose real network failure modes in controlled topologies.","level":"CCNA / CCNP / Juniper","description":"Network labs with realistic routed and switched topologies for configuration, troubleshooting, security, automation, and assessment.","idealFor":["CCNA and CCNP learners","Juniper learners","Corporate network teams"],"capabilities":["Routing and switching practice","Cisco, Juniper, and multi-vendor topologies","Packet analysis and troubleshooting","Network security and automation"],"toolsUsed":["Cisco IOSv","Juniper vMX","EVE-NG","Wireshark","NetBox"],"imagePath":"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85","environmentDetails":{"accessType":"Dedicated browser topology","duration":"30-day access","hardwareSoftware":"Cisco and Juniper virtual devices, Linux jump host, packet captures"}},
+  {"id":"vmware-enterprise-labs","category":"VMware Official & Enterprise Labs","title":"VMware Official & Enterprise Labs","tagline":"Operate production-shaped virtualisation platforms from first boot to recovery.","level":"VMware enterprise lab access","description":"Official and enterprise-grade VMware environments spanning Cloud Foundation, vSphere, NSX, and vSAN for deep platform practice.","idealFor":["VMware certification learners","Enterprise virtualization teams","Architecture and operations cohorts"],"capabilities":["VMware Cloud Foundation","vSphere and vCenter","NSX networking and security","vSAN storage and availability"],"toolsUsed":["VMware Cloud Foundation","vSphere","NSX","vSAN","PowerCLI"],"subgroups":[{"name":"VMware Cloud Foundation","capabilities":["SDDC Manager","Workload domains","Lifecycle management"]},{"name":"vSphere","capabilities":["ESXi","vCenter","HA and DRS"]},{"name":"NSX","capabilities":["Microsegmentation","Distributed networking","Security policy"]},{"name":"vSAN","capabilities":["Storage policies","Cluster resilience","Data services"]}],"imagePath":"https://images.unsplash.com/photo-1563770660941-10a2b3fc6f83?auto=format&fit=crop&w=1200&q=85","environmentDetails":{"accessType":"Reserved virtual cluster","duration":"21-day access","hardwareSoftware":"ESXi hosts, vCenter, NSX, vSAN, and PowerCLI"}},
+  {"id":"customized-it-labs","category":"Customized IT Labs","title":"Customized IT Labs","tagline":"A lab environment built around your exact technology stack.","level":"Enterprise and college","description":"Custom IT labs designed around a client’s curriculum, product versions, topology, assessment goals, and delivery model.","idealFor":["Corporate academies","College partnerships","Technology vendors and partners"],"capabilities":["Custom topology and machine images","Role-based access and cohort management","Assessment and scenario design","Usage reporting and support"],"toolsUsed":["Client-selected platforms","Virtual machines","Browser-based access","Monitoring and reporting"],"imagePath":"https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85","environmentDetails":{"accessType":"Bespoke lab-as-a-service","duration":"By consultation","hardwareSoftware":"Configured to client requirements and syllabus"}}
 ]
