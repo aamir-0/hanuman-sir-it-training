@@ -1,8 +1,10 @@
 [
-  {"name":"Cisco","logoPath":"/assets/logos/cisco.svg","alt":"Cisco"},
-  {"name":"HPE","logoPath":"/assets/logos/hpe.svg","alt":"HPE"},
-  {"name":"Huawei","logoPath":"/assets/logos/huawei.svg","alt":"Huawei"},
-  {"name":"Cognizant","logoPath":"/assets/logos/cognizant.svg","alt":"Cognizant"},
-  {"name":"Infosys","logoPath":"/assets/logos/infosys.svg","alt":"Infosys"},
-  {"name":"HCLTech","logoPath":"/assets/logos/hcltech.svg","alt":"HCLTech"}
+  {"name":"BT Group","logoPath":"/assets/logos2/BT.svg","alt":"BT Group"},
+  {"name":"Capgemini","logoPath":"/assets/logos2/capgemini.svg","alt":"Capgemini"},
+  {"name":"Giesecke+Devrient","logoPath":"/assets/logos2/Giesecke+Devrient.svg","alt":"Giesecke+Devrient"},
+  {"name":"HCLTech","logoPath":"/assets/logos2/HCLTech.svg","alt":"HCLTech"},
+  {"name":"KPMG","logoPath":"/assets/logos2/KPMG.svg","alt":"KPMG"},
+  {"name":"Persistent Systems","logoPath":"/assets/logos2/Persistent_Systems.svg","alt":"Persistent Systems"},
+  {"name":"Tech Mahindra","logoPath":"/assets/logos2/Tech_Mahindra.svg","alt":"Tech Mahindra"},
+  {"name":"Wipro","logoPath":"/assets/logos2/Wipro.svg","alt":"Wipro"}
 ]

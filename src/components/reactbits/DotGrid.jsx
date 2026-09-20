@@ -1,0 +1,1 @@
+export function DotGrid({ color = "#1E293B", size = 2, gap = 30 }) { return <div className="dot-grid" aria-hidden="true" style={{ "--dot-color": color, "--dot-size": `${size}px`, "--dot-gap": `${gap}px` }} />; }
