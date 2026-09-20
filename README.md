@@ -50,7 +50,13 @@ To add or edit a course, lab, testimonial, stat, company, or credential, update 
 
 ## Deployment
 
-Planned deployment: GitHub Pages. Netlify and Vercel are also compatible because the project is a static site with no build step.
+GitHub Pages deployment is configured through `.github/workflows/deploy.yml`. The workflow builds the Vite app and publishes `dist` whenever `main` is pushed. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+
+The deployed project URL will be:
+
+`https://aamir-0.github.io/hanuman-sir-it-training/`
+
+Netlify and Vercel remain compatible with `npm run build` and `dist` as the output directory.
 
 ## Branch Strategy
 
