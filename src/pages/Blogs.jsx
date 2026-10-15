@@ -1,3 +1,0 @@
-import { PageHero } from "./PageHero";
-
-export function Blogs() { return <><PageHero eyebrow="Insights" title="Blogs" description="Practical perspectives on infrastructure, cloud, learning, and the future of technical work." /><section className="py-24"><div className="mx-auto max-w-site px-6 text-center sm:px-10 lg:px-12"><div className="mx-auto max-w-xl border border-slate-200 bg-white p-10 shadow-sm"><p className="eyebrow text-brand">Coming soon</p><h2 className="display mt-4 text-3xl text-navy">The first field notes are on their way.</h2><p className="mt-4 text-sm leading-6 text-slate-600">This space will collect practical articles, training notes, and technology perspectives.</p></div></div></section></>; }

@@ -1,18 +1,5 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { SiteLayout } from "./components/layout/SiteLayout";
 import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Courses } from "./pages/Courses";
-import { CourseDetail } from "./pages/CourseDetail";
-import { Labs } from "./pages/Labs";
-import { LabDetail } from "./pages/LabDetail";
-import { Testimonials } from "./pages/Testimonials";
-import { Contact } from "./pages/Contact";
-import { CorporateTraining } from "./pages/CorporateTraining";
-import { CollegeTraining } from "./pages/CollegeTraining";
-import { Blogs } from "./pages/Blogs";
-import { TrainingExperiencePage } from "./pages/TrainingExperiencePage";
 
 export default function App() {
-  return <BrowserRouter basename={import.meta.env.BASE_URL}><Routes><Route element={<SiteLayout />}><Route path="/" element={<Home />} /><Route path="/corporate-training" element={<CorporateTraining />} /><Route path="/college-training" element={<CollegeTraining />} /><Route path="/courses" element={<Courses />} /><Route path="/courses/:id" element={<CourseDetail />} /><Route path="/labs" element={<Labs />} /><Route path="/labs/:id" element={<LabDetail />} /><Route path="/training-experience" element={<TrainingExperiencePage />} /><Route path="/about" element={<About />} /><Route path="/testimonials" element={<Testimonials />} /><Route path="/contact" element={<Contact />} /><Route path="/blogs" element={<Blogs />} /><Route path="*" element={<Navigate to="/" replace />} /></Route></Routes></BrowserRouter>;
+  return <Home />;
 }
