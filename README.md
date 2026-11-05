@@ -5,10 +5,7 @@ Production-grade React static website for Hanuman, an independent IT trainer spe
 ## Tech Stack
 
 - React with Vite
-- React Router
 - Tailwind CSS via PostCSS and a custom theme
-- Framer Motion
-- Radix UI primitives configured in the shadcn/ui style
 - JSON data imported directly as ES modules
 
 ## Project Structure
@@ -16,11 +13,12 @@ Production-grade React static website for Hanuman, an independent IT trainer spe
 ```text
 /
 ├── index.html                 # Vite entry document
+├── backend/                   # Django email API
 ├── src/
-│   ├── components/            # Layout, sections, cards, and UI primitives
+│   ├── components/            # Landing page sections, cards, and UI primitives
 │   ├── data/                  # Editable JSON content contracts
-│   ├── pages/                 # React Router page components
-│   ├── App.jsx                # Route tree
+│   ├── pages/Home.jsx         # Landing page
+│   ├── App.jsx                # Application entry
 │   ├── main.jsx               # React entry
 │   └── index.css              # Tailwind and visual tokens
 ├── assets/                    # Logos, images, and PDFs served as static assets
@@ -45,6 +43,31 @@ npm run build
 ```
 
 Then preview the production build with `npm run preview`.
+
+## Django enquiry API
+
+The landing page sends training enquiries to a small Django API. The API validates
+the request and sends it by SMTP without storing it in a database.
+
+```powershell
+cd backend
+py -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+Copy-Item .env.example .env
+python manage.py runserver
+```
+
+Set the SMTP values and `ENQUIRY_RECIPIENT_EMAIL` in `backend/.env`, then create
+a frontend `.env.local` file containing:
+
+```text
+VITE_API_URL=http://127.0.0.1:8000
+```
+
+For production, set `VITE_API_URL` to the public URL of the Django service before
+running `npm run build`. GitHub Pages hosts the React frontend only; deploy the
+Django backend separately on a Python host.
 
 To add or edit a course, lab, testimonial, stat, company, or credential, update the corresponding JSON file in `src/data/`. No page changes are required for list or detail content.
 
